@@ -1,27 +1,59 @@
-# Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+# Calculator Project
 
-## Development server
+This project is a calculator application developed using Angular. The application supports basic arithmetic operations and includes features for displaying past calculations and toggling themes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Basic arithmetic operations: addition, subtraction, multiplication, division
+- Percentage calculations and handling of negative values
+- Viewing past calculations
+- Theme toggling (light and dark mode)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
 
-## Build
+To run this project locally, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the Repository:**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/someOne-code/calculator-project-with-angular.git
+Navigate to the Project Directory:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+cd calculator-project-with-angular
+Install Dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Install the necessary packages by running:
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm install
+Run the Project:
+
+Start the application with:
+
+
+ng serve
+This command will run your application on a local server. You can view it by navigating to http://localhost:4200 in your browser.
+
+Usage
+Basic Operations: Perform basic arithmetic calculations using the calculator.
+History: Click on the "view history" button to see your calculation history.
+Theme Toggle: Use the theme toggle button to switch between light and dark modes.
+Contributing
+If you would like to contribute to this project, please submit a pull request. For any suggestions or bug reports, please use the issue page.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+If you have any questions or feedback, please contact aumut375@gmail.com
+
+
+   
+ 
+
+
+
+
+
