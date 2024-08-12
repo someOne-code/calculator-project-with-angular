@@ -1,0 +1,187 @@
+/* Genel Stil */
+body {
+    background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.calculator {
+    margin: 40px auto;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 40px; /* Kenar yarıçapını arttır */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 340px; /* Genişliği arttır */
+    background-color: #f1ecec;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yatayda ortala */
+    border: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.expression {
+    font-size: 24px;
+    color: #666;
+    opacity: 0.7;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.result {
+    font-size: 36px;
+    color: #333;
+    margin-top: auto;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: linear-gradient(to bottom right, #d6e4ff, #599ef8);
+    gap: 10px; /* tuşlar arasındaki boşluk */
+    padding: 20px;
+    border-radius: 40px;
+    width: calc(100% - 40px); /* sağ ve sol padding çıkar */
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* İç gölge ekle */
+    margin: 0 auto; /* tuşları yatayda ortala */
+    transition: background-color 0.5s;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #cddfeb;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+.calculator .bilmemne .key {
+    background-color: transparent; /* Tuşun arka plan rengini şeffaf yap */
+    border: none; /* Kenarlık olmaması için */
+}
+
+.key:hover {
+    background-color: #ccc;
+    transform: scale(1.1);
+}
+
+.key:active {
+    background-color: #aaa;
+    transform: scale(0.9); /* Tıklandığında küçült */
+}
+
+i {
+    color: #7e7777;
+}
+
+.theme-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    margin-right: 60px;
+}
+
+.theme-toggler:hover .fa-sun,
+.theme-toggler:hover .fa-moon {
+    color: orange; /* Butona hover yapıldığında simge rengi */
+}
+
+/* Light tema */
+.calculator.light {
+    background-color: #fff;
+}
+
+.calculator.light #display {
+    color: #0a1e23;
+}
+
+.calculator.light button {
+    background-color: #c3eaff;
+    color: #000000;
+}
+
+.calculator.light button.btn-equal {
+    background-color: #ddf3ef; /* Eşitlik işareti rengi */
+    color: #000;
+}
+
+/* Dark tema */
+.calculator.dark {
+    background-color: hsl(197, 43%, 8%);
+}
+
+.calculator.dark #display,
+.calculator.dark .key {
+    background-color: #1b2f38;
+    color: #f8fafb; /* İşlemler ve girişlerin beyaz renkte olması */
+}
+
+.calculator.dark button#clear {
+    background-color: #2d191e;
+    color: #bd3740;
+}
+
+.calculator.dark button.btn-operator {
+    background-color: #2e1f39;
+    color: #aa00a4;
+}
+
+.calculator.dark button.btn-equal {
+    background-color: #223323;
+    color: #ffffff;
+}
+
+.calculator.dark .buttons {
+    background-image: linear-gradient(to left, #2b13c9, #201173); 
+}
+
+.calculator.dark .display-screen,
+.calculator.dark .output-line {
+    color: #ffffff; /* Sonuçların yazı rengi */
+    font-size: 30px;
+}
+
+.calculator.dark .expression,
+.calculator.dark .result {
+    color: #ffffff; /* expression ve result yazı renkleri */
+}
+
+.calculator.dark .keys {
+    background-image: linear-gradient(to left, #2b13c9, #201153); 
+}
+
+.calculator.dark .bilmemne .key {
+    background-color: transparent; /* Tuşun arka plan rengini şeffaf yap */
+    border: none; /* Kenarlık olmaması için */
+}
+.calculator.dark .bilmemne .key i {
+    color: #fff; /* İkon rengi beyaz */
+}
+.calculator.dark .theme-toggler {
+    background-color: transparent; /* Karanlık modda arka plan rengini şeffaf yap */
+}
+
+.calculator.dark .theme-toggler:hover {
+    background-color: transparent; /* Hover durumunda da şeffaf yap */
+}
+
